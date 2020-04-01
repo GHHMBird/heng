@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <finan.heng.com.apps.utils.lgdpulltorefresh.PullToRefreshView
+        android:id="@+id/activity_scroll_text_pull"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/activity_scroll_text_recyclerview"
+            android:layout_width="match_parent"
+            android:background="@color/bg_main"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </finan.heng.com.apps.utils.lgdpulltorefresh.PullToRefreshView>
+
+</LinearLayout>

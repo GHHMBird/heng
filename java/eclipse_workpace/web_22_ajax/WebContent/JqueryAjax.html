@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="/web_22_ajax/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+	function sync1(){
+		$.get("/web_22_ajax/ajaxServlet",{"name":"张三","password":"zs"},function(text){//无法提交中文会乱码
+			alert(text);
+		},"text");
+	}
+	
+	function sync2(){
+		$.post("/web_22_ajax/ajaxServlet",{"name":"李四","password":"zs"},function(text){//提交中文不会乱码
+			alert(/* text.name */text);
+		},"json");
+	}
+	
+	function sync3(){
+		$.ajax({url:"/web_22_ajax/ajaxServlet",type:"POST",success:function(data){
+			alert(/* data.name */data.name);
+		},error:function(data){
+			alert(data);
+		},dataType:"json",data:{"name":"汤姆","age":18}});
+	}
+</script>
+</head>
+<body>
+	<p>
+		<input type="button" value="点我GET异步访问" onclick="sync1()"/>
+		<span id="span1"></span>
+	</p>
+	
+	<p>
+		<input type="button" value="点我POST异步访问" onclick="sync2()"/>
+		<span id="span2"></span>
+	</p>
+	
+	<p>
+		<input type="button" value="点我调用底层ajax请求" onclick="sync3()"/>
+		<span id="span3"></span>
+	</p>
+</body>
+</html>

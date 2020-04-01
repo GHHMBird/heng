@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:elevation="0dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+                <RelativeLayout
+                    android:id="@+id/rl_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:background="#fc5555"
+                    android:paddingTop="25dp">
+
+                    <ImageView
+                        android:id="@+id/iv_setting"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/set_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_jine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="50dp"
+                        android:textColor="#ffffff"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/tv_keyongyue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_jine"
+                        android:layout_centerHorizontal="true"
+                        android:text="可用余额(元)"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/fragment_my_chongzhi"
+                        android:layout_width="75dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@+id/tv_keyongyue"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/bg_submit_white"
+                        android:text="充值"
+                        android:textColor="@color/text_Fc291d"
+                        android:textSize="15sp" />
+
+                    <Button
+                        android:id="@+id/fragment_my_tixian"
+                        android:layout_width="75dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/tv_keyongyue"
+                        android:layout_marginRight="100dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/bg_submit_white"
+                        android:text="提现"
+                        android:textColor="@color/text_Fc291d"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:background="#fc3d33"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/tv_shouyi"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="6dp"
+                                    android:textColor="#ffffff"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/tv_shouyi"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="累计收益"
+                                    android:textColor="#ffffff"
+                                    android:textSize="12sp" />
+
+                                <View
+                                    android:layout_width="1px"
+                                    android:layout_height="50dp"
+                                    android:layout_alignParentRight="true"
+                                    android:background="#ffffff" />
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/tv_zongzichan"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="6dp"
+                                    android:textColor="#ffffff"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/tv_zongzichan"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="总资产"
+                                    android:textColor="#ffffff"
+                                    android:textSize="12sp" />
+
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_top_unlogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:background="#fc5555"
+                    android:paddingTop="25dp">
+
+                    <Button
+                        android:id="@+id/myfragment_bt_login"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/bg_submit_white_red"
+                        android:text="登录/注册"
+                        android:textColor="@color/white" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:background="#fc3d33"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/tv_shouyi2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="6dp"
+                                    android:text="0.00"
+                                    android:textColor="#ffffff"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/tv_shouyi2"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="累计收益"
+                                    android:textColor="#ffffff"
+                                    android:textSize="12sp" />
+
+                                <View
+                                    android:layout_width="1px"
+                                    android:layout_height="50dp"
+                                    android:layout_alignParentRight="true"
+                                    android:background="#ffffff" />
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/tv_zongzichan2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="6dp"
+                                    android:text="0.00"
+                                    android:textColor="#ffffff"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/tv_zongzichan2"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="总资产"
+                                    android:textColor="#ffffff"
+                                    android:textSize="12sp" />
+
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divide_0_dp"></TableLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <GridView
+            android:id="@+id/mygridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:numColumns="3"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        </GridView>
+
+    </android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>

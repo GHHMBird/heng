@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>切换图片小DEMO</title>
+		<style>
+			div{
+				border: 1px solid blue;
+				width: 500px;
+				height: 350px;
+				margin: auto;
+			}
+		</style>
+		<script>
+			var i = 1
+			function changeImage(){
+				if (i==5) {
+					i = 1
+				}
+				var image = document.getElementById("image")
+				image.src="../img/img/img"+i+".jpg"
+				i++
+			}
+		</script>
+	</head>
+	<body>
+		<div align="center">
+			<input type="button" onclick="changeImage()" value="下一张" /><br />
+			<img src="../img/img/1.jpg" width="100%" id="image"/>
+		</div>
+	</body>
+</html>

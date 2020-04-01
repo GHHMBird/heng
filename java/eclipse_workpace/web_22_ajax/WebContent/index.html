@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<script type="text/javascript">
+			window.onload = function(){
+				document.getElementById("ul").getElementsByTagName("li")[0].innerHTML = "胡鹤鸣";
+			}
+			
+			function sync(){
+				var xmlHttp = new XMLHttpRequest();//1.创建引擎
+				xmlHttp.onreadystatechange = function(){//2.设置监听    能监听到服务器各个状态 0初始化 1链接建立 2请求接受 3请求处理 4请求完成并返回
+					//5.接收数据
+					if(xmlHttp.readyState==4&&xmlHttp.status==200){
+						var res = xmlHttp.responseText;
+						document.getElementById("span").innerHTML = res;
+					}
+				}
+				xmlHttp.open("GET","/web_22_ajax/ajaxServlet",true);//3.封装请求    第三个参数true是异步，false是同步
+				xmlHttp.send();//4.发送请求
+			}
+			
+			var json = {"name":"zhangsan","age":25,"account":{"username":"zhangsan","password":"zs","balance":0.13}};
+			
+		</script>
+	</head>
+	<body>
+		<ul id="ul">
+			<li>啊哈哈哈</li>
+		</ul>
+		
+		<p><input type="button" value="点我走异步访问服务器" onclick="sync()"/></p>
+		
+		<p><span id="span"></span></p>
+		
+	</body>
+</html>

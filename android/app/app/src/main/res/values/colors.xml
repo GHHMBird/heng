@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_3f51b5">#3F51B5</color>
+    <color name="color_303f9f">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="mainColor">#ED552A</color>
+    <color name="bg_mainColor">#FFA014</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red"> #FF0000</color>
+    <color name="darkgrey"> #C0C0C0</color>
+    <color name="grey"> #ebebeb</color>
+    <color name="black">#000000</color>
+    <color name="color_cccccc">#cccccc</color>
+    <color name="tab_selected_color">#FFA014</color>
+    <color name="color_bbbbbb">#bbbbbb</color>
+    <color name="color_666">#666666</color>
+    <color name="bg_main">#F5F5F5</color>
+    <color name="red_package">#fff0c8</color>
+    <color name="text_product_red_color">#F74C4C</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_999999">#999999</color>
+    <color name="bg_grey">#F5F5F5</color>
+    <color name="text_Fc291d">#Fc291d</color>
+    <color name="bg_circle_grey">#979797</color>
+    <color name="text_9b">#9b9b9b</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="text_markview">#eb5c05</color>
+    <color name="linechart_org">#F6A623</color>
+    <color name="bg_pop">#99000000</color>
+    <color name="gray">#BDBDBD</color>
+    <color name="theme_window_background">#ffffff</color>
+    <color name="colorAccent_alpha">#99FFC846</color>
+    <color name="calendar_color">#fbb44d</color>
+    <color name="green_text">#7ACD2F</color>
+    <color name="default_shadow_color">#66ed552a</color>
+    <color name="shuxian">#dcdcdc</color>
+    <color name="default_fill_color">#ffffff</color>
+    <color name="shadow">#55eb5c05</color>
+    <color name="update_text">#64280a</color>
+    <color name="color_e5">#e5e5e5</color>
+    <color name="color_ef5a2c">#ef5a2c</color>
+    <color name="gray_969ba5">#969ba5</color>
+    <color name="color_40d859">#40d859</color>
+    <color name="color_eeeeee">#eeeeee</color>
+    <color name="item_click_down">#f0f0f0</color>
+    <color name="color_0f90e2">#0f90e2</color>
+    <color name="color_5db36b">#5db36b</color>
+    <color name="color_5aa0ff">#5aa0ff</color>
+    <color name="line_grey">#999999</color>
+
+    <color name="f850_default_blue">#0079ff</color>
+
+    <drawable name="transparent">#00000000</drawable>
+
+    <color name="header_toast_bg">#ccebfc</color>
+    <color name="header_toast">#024ca1</color>
+    <color name="header_toast_line">#abdaf4</color>
+    <color name="offline_down_title">#909090</color>
+    <color name="offline_head_font">#FFFFFF</color>
+    <color name="gary">#898989</color>
+    <color name="taobao_black">#333333</color>
+    <color name="offline_down_size">#777777</color>
+    <color name="gray_lite">#c5c5c5</color>
+    <color name="progress_background">#ededed</color>
+    <color name="blue">#4c90f9</color>
+    <color name="itemlist">#f4f4f4</color>
+    <color name="act_background">#efefef</color>
+    <color name="phone_bg">#f6f6f6</color>
+    <color name="translucent">#66000000</color>
+    <color name="color666">#661B85FF</color>
+    <color name="color_1B85FF">#1B85FF</color>
+</resources>

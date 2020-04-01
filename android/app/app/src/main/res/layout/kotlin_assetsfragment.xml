@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <finan.heng.com.apps.utils.CountdownView
+        android:id="@+id/cv_countdownViewTest1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        app:isHideTimeBackground="false"
+        app:isShowDay="true"
+        app:isShowHour="true"
+        app:isShowMillisecond="true"
+        app:isShowMinute="true"
+        app:isShowSecond="true"
+        app:isShowTimeBgDivisionLine="true"
+        app:suffixGravity="center"
+        app:suffixTextColor="#000000"
+        app:suffixTextSize="20sp"
+        app:timeBgColor="#FF5000"
+        app:timeTextColor="#FFFFFF"
+        app:timeTextSize="20sp" />
+
+    <!--
+       <finan.heng.com.apps.utils.CountdownView
+           android:id="@+id/cv_countdownViewTest2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_horizontal"
+           android:layout_marginTop="20dp"
+           app:timeBgDivisionLineSize="1dp"
+           app:timeBgSize="50dp"
+           app:isShowDay="false"
+           app:isShowHour="false"
+           app:isShowMinute="true"
+           app:isShowSecond="true"
+           app:isShowMillisecond="true"
+           app:suffixGravity="center"
+           app:suffixTextColor="#000000"
+           app:suffixTextSize="30sp"
+           app:timeTextColor="#FFFFFF"
+           app:timeTextSize="30sp"
+           app:isHideTimeBackground="false"
+           app:timeBgRadius="3dp" />
+
+       <finan.heng.com.apps.utils.CountdownView
+           android:id="@+id/cv_countdownViewTest3"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_horizontal"
+           android:layout_marginTop="20dp"
+           app:isShowDay="false"
+           app:isShowHour="true"
+           app:isShowMinute="true"
+           app:isShowSecond="true"
+           app:isShowMillisecond="true"
+           app:suffixGravity="center"
+           app:suffixTextColor="#000000"
+           app:suffixTextSize="17sp"
+           app:timeTextColor="#000000"
+           app:timeTextSize="20sp" />
+
+       <finan.heng.com.apps.utils.CountdownView
+           android:id="@+id/cv_countdownViewTest5"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_horizontal"
+           android:layout_marginTop="20dp"
+           app:isShowDay="true"
+           app:isShowHour="true"
+           app:isShowMinute="true"
+           app:isShowSecond="true"
+           app:isShowMillisecond="false"
+           app:suffixDay="天"
+           app:suffixHour="小时"
+           app:suffixMinute="分钟"
+           app:suffixSecond="秒"
+           app:suffixGravity="top"
+           app:suffixTextColor="#000000"
+           app:suffixTextSize="12sp"
+           app:timeTextColor="#000000"
+           app:timeTextSize="22sp" />
+
+       <finan.heng.com.apps.utils.CountdownView
+           android:id="@+id/cv_countdownViewTest6"
+           android:layout_width="120dp"
+           android:layout_height="40dp"
+           android:layout_gravity="center_horizontal"
+           android:layout_marginTop="20dp"
+           android:background="@drawable/sel_btn"
+           app:isShowDay="false"
+           app:isShowHour="true"
+           app:suffixMillisecond="0"
+           app:isShowMinute="true"
+           app:isShowSecond="true"
+           app:isShowMillisecond="false"
+           app:suffixGravity="center"
+           app:suffixTextColor="#000000"
+           app:suffixTextSize="20sp"
+           app:timeTextColor="#000000"
+           app:timeTextSize="20sp" />
+   -->
+
+    <Button
+        android:id="@+id/kotlin_assetsfragment_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="COME ON" />
+
+</LinearLayout>

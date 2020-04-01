@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="finan.heng.com.apps.two_page_refresh_load.KScrollBarLayoutActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <in.srain.cube.views.ptr.PtrFrameLayout
+        android:id="@+id/activity_kmetral_sts_ptr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        cube_ptr:ptr_duration_to_close="200"
+        cube_ptr:ptr_duration_to_close_header="1000"
+        cube_ptr:ptr_keep_header_when_refresh="false"
+        cube_ptr:ptr_pull_to_fresh="false"
+        cube_ptr:ptr_ratio_of_header_height_to_refresh="1"
+        cube_ptr:ptr_resistance="1.1">
+
+        <finan.heng.com.apps.utils.ScrollableLayout
+            android:id="@+id/activity_kmetral_sts_scrollbarlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="211dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/logo" />
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="85dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="23dp"
+                        android:paddingTop="21dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="公司名称"
+                                android:textColor="@color/color_333333"
+                                android:textSize="17sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="16dp"
+                                    android:layout_height="16dp"
+                                    android:src="@mipmap/start" />
+
+                                <ImageView
+                                    android:layout_width="13dp"
+                                    android:layout_height="13dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:src="@mipmap/amap_start" />
+
+                                <ImageView
+                                    android:layout_width="13dp"
+                                    android:layout_height="13dp"
+                                    android:layout_marginLeft="6dp"
+                                    android:src="@mipmap/amap_start" />
+
+                                <ImageView
+                                    android:layout_width="13dp"
+                                    android:layout_height="13dp"
+                                    android:layout_marginLeft="6dp"
+                                    android:src="@mipmap/amap_start" />
+
+                                <ImageView
+                                    android:layout_width="13dp"
+                                    android:layout_height="13dp"
+                                    android:layout_marginLeft="6dp"
+                                    android:src="@mipmap/amap_start" />
+
+                                <ImageView
+                                    android:layout_width="13dp"
+                                    android:layout_height="13dp"
+                                    android:layout_marginLeft="6dp"
+                                    android:src="@mipmap/amap_start" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/bg_btn_home_pro"
+                            android:gravity="center"
+                            android:text="买单支付"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/gray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@mipmap/logo_center" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:text="火星  某地"
+                            android:textColor="@color/color_333333"
+                            android:textSize="14sp" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="13dp"
+                            android:layout_marginLeft="54dp"
+                            android:layout_marginTop="13dp"
+                            android:background="@color/gray" />
+
+                        <LinearLayout
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="@mipmap/end"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/gray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@mipmap/icon" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="暂无主页"
+                            android:textColor="@color/color_333333"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="13dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <FrameLayout
+                        android:id="@+id/activity_kmetral_sts_fl1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/color_0f90e2">
+
+                        <TextView
+                            android:id="@+id/activity_kmetral_sts_tv1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="商家介绍"
+                            android:textColor="@color/color_333333"
+                            android:textSize="14sp" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/activity_kmetral_sts_fl2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/activity_kmetral_sts_tv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="评价"
+                            android:textColor="@color/color_333333"
+                            android:textSize="14sp" />
+
+                    </FrameLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divide_0.1_dp"
+                android:background="@color/gray" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/activity_kmetral_sts_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+            </android.support.v4.view.ViewPager>
+
+        </finan.heng.com.apps.utils.ScrollableLayout>
+    </in.srain.cube.views.ptr.PtrFrameLayout>
+</LinearLayout>

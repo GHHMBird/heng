@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <finan.heng.com.apps.utils.PullUpToLoadMore
+        android:id="@+id/kotlin_activity_kpdactivity_pulltoloadmore"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <finan.heng.com.apps.utils.MyScrollView
+            android:id="@+id/kotlin_activity_kpdactivity_scroll1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <include layout="@layout/kotlin_scroll1" />
+
+        </finan.heng.com.apps.utils.MyScrollView>
+
+        <finan.heng.com.apps.utils.MyScrollView
+            android:id="@+id/kotlin_activity_kpdactivity_scroll2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <include layout="@layout/kotlin_scroll2" />
+
+        </finan.heng.com.apps.utils.MyScrollView>
+
+    </finan.heng.com.apps.utils.PullUpToLoadMore>
+</LinearLayout>

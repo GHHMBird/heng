@@ -1,0 +1,130 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+
+    dataBinding {
+        enabled = true
+    }
+    defaultConfig {
+        applicationId "finan.heng.com.apps"
+        minSdkVersion 17
+        targetSdkVersion 28
+        versionCode 3
+        versionName "1.0.1"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        dexOptions {
+            javaMaxHeapSize "4g"
+        }
+        manifestPlaceholders = [
+                GETUI_APP_ID    : "QGTtVyCFEj6GRIsgXHg7Q8",
+                GETUI_APP_KEY   : "7vnyls7MWDALzlNJxVrjc4",
+                GETUI_APP_SECRET: "f2Fjsw1aor6ngld2lOYM04",
+                PACKAGE_NAME    : applicationId
+        ]
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "arm64-v8a", "mips", "mips64", "x86", "x86_64"
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    signingConfigs {
+        release {
+            keyAlias 'www199346'
+            keyPassword 'www199346'
+            storeFile file('keystore.jks')
+            storePassword 'www199346'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'com.android.support:appcompat-v7:28+'
+    implementation 'com.android.support:design:28+'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:support-v13:28+'
+    implementation 'com.android.support:cardview-v7:28+'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    kapt 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    //引导页
+    implementation 'cn.bingoogolapple:bga-banner:2.1.6@aar'
+    implementation 'com.youth.banner:banner:1.4.8'
+    //最新版本
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    implementation 'com.lester:scolltextview:1.0.0'
+    //下拉刷新
+    implementation 'com.android.support:recyclerview-v7:28+'
+    implementation 'cn.bingoogolapple:bga-refreshlayout:1.1.7@aar'
+    //事件分发7
+    implementation 'com.mcxiaoke.xbus:bus:1.0.2'
+    //dialog
+    implementation 'com.afollestad.material-dialogs:core:0.8.6.2'
+    //响应式
+    implementation 'io.reactivex:rxandroid:1.1.0'
+    implementation 'io.reactivex:rxjava:1.1.0'
+    //OKHTTP网络连接类库
+    implementation 'com.squareup.okhttp3:okhttp:3.4.1'
+    //OKHTTP网络连接拦截器，用来打印接口LOG
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    //GSON转换
+    implementation 'com.squareup.retrofit2:converter-gson:2.0.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.0.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    //kotlin
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+//    kapt 'com.android.databinding:compiler:2.3.3'
+    //听云
+    implementation "com.networkbench.newlens.agent.android:nbs.newlens.agent:2.5.3"
+    //高德地图3D版本
+//    compile 'com.amap.api:3dmap:latest.integration'
+    //高德导航
+    implementation 'com.amap.api:navi-3dmap:latest.integration'
+    //高德搜索
+    implementation 'com.amap.api:search:latest.integration'
+    //高德定位
+    implementation 'com.amap.api:location:latest.integration'
+    //BaseQuickAdapter
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.22'
+//    compile "org.jetbrains.anko:anko-common:$anko_version"
+//    compile "org.jetbrains.anko:anko-support-v4:$anko_version"
+//    compile "org.jetbrains.anko:anko-appcompat-v7:$anko_version"
+//    compile "org.jetbrains.anko:anko-design:$anko_version"
+//    compile "org.jetbrains.anko:anko-recyclerview-v7:$anko_version"
+    //下拉刷新
+    implementation 'in.srain.cube:ultra-ptr:1.0.11'
+}
+kapt {
+    generateStubs = true
+}
+repositories {
+    mavenCentral()
+    allprojects {
+        repositories {
+            maven { url "https://jitpack.io" }
+        }
+    }
+}

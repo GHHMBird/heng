@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>表格隔行换色</title>
+		<style>
+			
+		</style>
+		<script>
+			function mouseGo(id,type){
+				if(type==0){
+					document.getElementById(id).bgColor = "red"
+				}else{
+					document.getElementById(id).bgColor = "white"
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<table border="1" width="500" height="50" align="center" >
+			<thead>
+				<tr onmouseover="mouseGo('tr1','0')" id="tr1" onmouseout="mouseGo('tr1','1')">
+					<th>编号</th>
+					<th>姓名</th>
+					<th>年龄</th>
+				</tr>
+			</thead>
+			<tbody id="tbody">
+				<tr onmouseover="mouseGo('tr2','0')" id="tr2" onmouseout="mouseGo('tr2','1')">
+					<td>1</td>
+					<td>张三</td>
+					<td>22</td>
+				</tr>
+				<tr  onmouseover="mouseGo('tr3','0')" id="tr3" onmouseout="mouseGo('tr3','1')">
+					<td>2</td>
+					<td>李四</td>
+					<td>25</td>
+				</tr>
+				<tr  onmouseover="mouseGo('tr4','0')" id="tr4" onmouseout="mouseGo('tr4','1')">
+					<td>3</td>
+					<td>王五</td>
+					<td>27</td>
+				</tr>
+				<tr  onmouseover="mouseGo('tr5','0')" id="tr5" onmouseout="mouseGo('tr5','1')">
+					<td>4</td>
+					<td>赵六</td>
+					<td>29</td>
+				</tr>
+				<tr  onmouseover="mouseGo('tr6','0')" id="tr6" onmouseout="mouseGo('tr6','1')">
+					<td>5</td>
+					<td>田七</td>
+					<td>30</td>
+				</tr>
+				<tr  onmouseover="mouseGo('tr7','0')" id="tr7" onmouseout="mouseGo('tr7','1')">
+					<td>6</td>
+					<td>汾九</td>
+					<td>20</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>

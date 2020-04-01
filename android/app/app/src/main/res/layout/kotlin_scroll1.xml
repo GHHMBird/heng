@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/kotlin_scroll1_body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="固定死的TEXT" />
+
+        </LinearLayout>
+
+        <finan.heng.com.apps.utils.MyScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="right|center_vertical"
+                    android:text="textRight" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="right|center_vertical"
+                    android:text="textRight" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="right|center_vertical"
+                    android:text="textRight" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="right|center_vertical"
+                    android:text="textRight" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right"
+                    android:text="text1" />
+
+            </LinearLayout>
+
+        </finan.heng.com.apps.utils.MyScrollView>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/kotlin_scroll1_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/korlin_scroll1_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="#e5e5e5"
+            android:gravity="center"
+            android:text="向上拉取查看项目详情"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

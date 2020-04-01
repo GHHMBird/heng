@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>动态添加城市</title>
+		<style>
+			button{
+				width: 100px;
+				height: 50px;
+			}
+		</style>
+		<script>
+			window.onload = function(){
+				var button = document.getElementById("buttons").onclick = function(){
+					var ul = document.getElementById("uls")
+					var text = document.createTextNode("开封")
+					var li = document.createElement("li")
+					li.appendChild(text)
+					ul.appendChild(li)
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<ul id="uls">
+			<li>北京</li>
+			<li>上海</li>
+			<li>广州</li>
+			<li>深圳</li>
+		</ul>
+		<p align="center"><button id="buttons"></button></p>
+	</body>
+</html>

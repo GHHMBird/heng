@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="22dp"
+            android:text="为保证您的账户安全请完成以下安全验证"
+            android:textColor="#666"
+            android:textSize="13sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_shiming"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/view10"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/divide_15_dp"
+            android:text="身份证号码"
+            android:textColor="#333333"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100dp"
+            android:background="@null"
+            android:maxLength="18"
+            android:digits="0123456789X"
+            android:hint="请输入实名认证的身份证号"
+            android:singleLine="true"
+            android:textColor="#666"
+            android:textColorHint="#bbb"
+            android:textSize="16sp"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e5e5e5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/divide_15_dp"
+            android:text="验证码"
+            android:textColor="#333333"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/et_msgcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100dp"
+            android:background="@null"
+            android:hint="请输入短信验证码"
+            android:singleLine="true"
+            android:textColor="#666"
+            android:textColorHint="#bbb"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/activity_findjiaoyimima_msg_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/divide_15_dp"
+            android:text="获取验证码"
+            android:textColor="#5AA0FF"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_next"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/divide20_dp"
+        android:layout_marginRight="@dimen/divide20_dp"
+        android:enabled="false"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bg_submit_gray"
+        android:text="下一步"
+        android:textColor="#fff"
+        android:textSize="16sp"/>
+
+</LinearLayout>

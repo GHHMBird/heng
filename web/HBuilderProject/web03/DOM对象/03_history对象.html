@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>history对象</title>
+		<script>
+	//		history.go()跳转某个指定的历史记录页面，需要传参数
+	//		history.back()跳转到之前的历史记录页面
+	//		history.forward()跳转到之后的历史纪录页面
+			function back(){
+				history.back()
+			}
+			function next(){
+				history.forward()
+			}
+			function go(){
+				history.go(-1)
+			}
+		</script>
+	</head>
+	<body>
+		<p align="center"><a href="02_location对象.html">测试下一页请先点击</a></p>
+		<input type="button" onclick="back()" value="返回上一页"/>
+		<input type="button" onclick="next()" value="前往下一页"/>
+		<input type="button" onclick="go()" value="进入某一页"/>
+	</body>
+</html>

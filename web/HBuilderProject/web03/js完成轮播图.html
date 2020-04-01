@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>html首页</title>
+	</head>
+	<script>
+		var index = 1
+		function init(){
+			window.setInterval("imageChange()",1000)
+		}
+		function imageChange(){
+			if (index==8) {
+				index = 1
+			}
+			document.getElementById("image").src="img/img/small0"+index+".jpg"
+			index++
+		}
+	</script>
+	<body onload="init()">
+		<table border="1px" width="1300px" align="center" height="100%" cellpadding="0px" cellspacing="0px">
+			<!--logo-->
+			<tr>
+				<td>
+					<table  width="100%" >
+						<tr height="50px">
+							<td width="33%">
+								<img src="../img/logo2.png" height="47px" />
+							</td>
+							<td width="33%">
+								<img src="../img/header.png" height="47px" />
+							</td>
+							<td width="33%">
+								<a href="#">登陆</a>
+								<a href="#">注册</a>
+								<a href="#">购物车</a>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<!--导航栏-->
+			<tr>
+				<td bgcolor="black" height="50px">
+					&nbsp;&nbsp;<a href="#"><font color="white" size="=4">首页</font></a>&nbsp;&nbsp;
+					&nbsp;&nbsp;<a href="#"><font color="white" size="=4">手机数码</font></a>&nbsp;&nbsp;
+					&nbsp;&nbsp;<a href="#"><font color="white" size="=4">电脑办公</font></a>&nbsp;&nbsp;
+					&nbsp;&nbsp;<a href="#"><font color="white" size="=4">鞋靴箱包</font></a>&nbsp;&nbsp;
+					&nbsp;&nbsp;<a href="#"><font color="white" size="=4">家用电器</font></a>
+				</td>
+			</tr>
+			<!--轮播图-->
+			<tr  height="50px">
+				<td>
+					<img src="../img/1.jpg" id="image" width="100%"/>
+				</td>
+			</tr>
+			<!--最新商品-->
+			<tr>
+				<td>
+					<table border="1px" width="100%" >
+						<tr>
+							<td colspan="7">
+								&nbsp;&nbsp;<font size="5">热门商品</font>&nbsp;&nbsp;
+								<img src="../img/title2.jpg" />
+							</td>
+						</tr>
+						<tr>
+							<td rowspan="2" width="190px" height="500px">
+								<img src="../img/big01.jpg"  width="100%" height="100%"/>
+							</td>
+							<td colspan="3" width="560px" height="250px">
+								<a href="#">
+									<img src="../img/middle01.jpg" width="100%" height="100%"/>
+								</a>
+							</td>
+							<td width="185px" align="center"> 
+								<a href="#">
+									<img src="../img/small01.jpg" width="100%" height="100%"/><br />
+									<font >榨汁机</font><br />
+									<font color="red">￥80</font>
+								</a>
+							</td>
+							<td width="185px" align="center">
+								<a href="#">
+									<img src="../img/small02.jpg" width="100%" height="100%"/><br />
+									<font >电视机</font><br />
+									<font color="red">￥8000</font>
+								</a>
+							</td>
+							<td width="185px" align="center">
+								<a href="#">
+									<img src="../img/small03.jpg" width="100%" height="100%"/><br />
+									<font >电饭锅</font><br />
+									<font color="red">￥180</font>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td align="center">
+								<a href="#">
+									<img src="../img/small04.jpg" width="100%" height="100%"/><br />
+									<font >电饭锅</font><br />
+									<font color="red">￥180</font>
+								</a>
+							</td>
+							<td align="center">
+								<a href="#">
+									<img src="../img/small05.jpg" width="100%" height="100%"/><br />
+									<font >电饭锅</font><br />
+									<font color="red">￥180</font>
+								</a>
+							</td>
+							<td align="center">
+								<a href="#">
+									<img src="../img/small06.jpg" width="100%" height="100%"/><br />
+									<font >电饭锅</font><br />
+									<font color="red">￥180</font>
+								</a>
+							</td>
+							<td align="center">
+								<a href="#">
+									<img src="../img/small07.jpg" width="100%" height="100%"/><br />
+									<font >电饭锅</font><br />
+									<font color="red">￥180</font>
+								</a>
+							</td>
+							<td align="center">
+								<a href="#">
+									<img src="../img/small08.jpg" width="100%" height="100%"/><br />
+									<font >电饭锅</font><br /><br />
+									<font color="red">￥180</font>
+								</a>
+							</td>
+							<td align="center">
+								<a href="#">
+									<img src="../img/small03.jpg" width="100%" height="100%"/><br />
+									<font >电饭锅</font><br />
+									<font color="red">￥180</font>
+								</a>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<!--广告图-->
+			<tr>
+				<td>
+					<img src="../img/ad.jpg" width="100%" />
+				</td>
+			</tr>
+			<!--热门商品-->
+			<tr>
+				<td>
+					<table border="1px" width="100%" >
+						<tr>
+							<td colspan="7">
+								&nbsp;&nbsp;<font size="5">热门商品</font>&nbsp;&nbsp;
+								<img src="../img/title2.jpg" />
+							</td>
+						</tr>
+						<tr>
+							<td rowspan="2" width="190px" height="500px">
+								<img src="../img/big01.jpg"  width="100%" height="100%"/>
+							</td>
+							<td colspan="3" width="560px" height="250px">
+								<a href="#">
+									<img src="../img/middle01.jpg" width="100%" height="100%"/>
+								</a>
+							</td>
+							<td width="185px" align="center"> 
+								<a href="#">
+									<img src="../img/small01.jpg" width="100%" height="100%"/><br />
+									<font >榨汁机</font><br />
+									<font color="red">￥80</font>
+								</a>
+							</td>
+							<td width="185px" align="center">
+								<a href="#">
+									<img src="../img/small02.jpg" width="100%" height="100%"/><br />
+									<font >电视机</font><br />
+									<font color="red">￥8000</font>
+								</a>
+							</td>
+							<td width="185px" align="center">
+								<a href="#">
+									<img src="../img/small03.jpg" width="100%" height="100%"/><br />
+									<font >电饭锅</font><br />
+									<font color="red">￥180</font>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td align="center">
+								<a href="#">
+									<img src="../img/small04.jpg" width="100%" height="100%"/><br />
+									<font >电饭锅</font><br />
+									<font color="red">￥180</font>
+								</a>
+							</td>
+							<td align="center">
+								<a href="#">
+									<img src="../img/small05.jpg" width="100%" height="100%"/><br />
+									<font >电饭锅</font><br />
+									<font color="red">￥180</font>
+								</a>
+							</td>
+							<td align="center">
+								<a href="#">
+									<img src="../img/small06.jpg" width="100%" height="100%"/><br />
+									<font >电饭锅</font><br />
+									<font color="red">￥180</font>
+								</a>
+							</td>
+							<td align="center">
+								<a href="#">
+									<img src="../img/small07.jpg" width="100%" height="100%"/><br />
+									<font >电饭锅</font><br />
+									<font color="red">￥180</font>
+								</a>
+							</td>
+							<td align="center">
+								<a href="#">
+									<img src="../img/small08.jpg" width="100%" height="100%"/><br />
+									<font >电饭锅</font><br /><br />
+									<font color="red">￥180</font>
+								</a>
+							</td>
+							<td align="center">
+								<a href="#">
+									<img src="../img/small03.jpg" width="100%" height="100%"/><br />
+									<font >电饭锅</font><br />
+									<font color="red">￥180</font>
+								</a>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<!--广告图片-->
+			<tr>
+				<td>
+					<img src="../img/footer.jpg" width="100%" />
+				</td>
+			</tr>
+			<!--友情链接-->
+			<tr>
+				<td height="50px" align="center">
+					<a href="关于我们/关于我们.html" target="_blank"><font color="deepskyblue">关于我们</font></a>&nbsp;&nbsp;
+					<a href="#"><font color="deepskyblue">联系我们</font></a>&nbsp;&nbsp;
+					<a href="#"><font color="deepskyblue">招贤纳士</font></a>&nbsp;&nbsp;
+					<a href="#"><font color="deepskyblue">法律声明</font></a>&nbsp;&nbsp;
+					<a href="#"><font color="deepskyblue">友情链接</font></a>&nbsp;&nbsp;
+					<a href="#"><font color="deepskyblue">支付方式</font></a>&nbsp;&nbsp;
+					<a href="#"><font color="deepskyblue">配送方式</font></a>&nbsp;&nbsp;
+					<a href="#"><font color="deepskyblue">服务声明</font></a>&nbsp;&nbsp;
+					<a href="#"><font color="deepskyblue">广告声明</font></a><br />
+						<font color="black">Copyright © 2005-2016 传智商城 版权所有</font>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>02_JQ页面加载与js页面加载</title>
+		<script type="text/javascript" src="../js/jquery-1.8.3.js" ></script>
+		<script>
+			/*//传统方式同一个方法  后面的方法会覆盖前面的方法
+			window.onload=function(){
+				alert("aaa")
+			}
+			window.onload=function(){
+				alert("bbb")
+			}*/
+			window.onload=function(){
+				alert("ccc")
+			}
+			jQuery(document).ready(function(){
+				alert("aaa")
+			})
+			jQuery(document).ready(function(){
+				alert("bbb")
+			})
+			$(document).ready(function(){
+				alert("ddd")
+			})
+			$(function(){
+				alert("eee")
+			})
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

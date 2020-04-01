@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divide_0.05_dp"
+        android:background="@color/gray" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <finan.heng.com.apps.two_page_up_down_tool.SlideDetailsLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/activity_kup_down_page_sdl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:default_panel="front"
+            app:duration="300"
+            app:percent="0.4">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:text="abc" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/logo_center" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/logo_center" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/logo_center" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/logo_center" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/logo_center" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:text="abc" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:text="abc" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:text="abc" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:text="abc" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:text="abc" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:text="abc" />
+
+                    <TextView
+                        android:id="@+id/activity_kup_down_page_tv1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center" />
+
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/activity_kup_down_page_recycler2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+        </finan.heng.com.apps.two_page_up_down_tool.SlideDetailsLayout>
+
+
+    </FrameLayout>
+
+</LinearLayout>

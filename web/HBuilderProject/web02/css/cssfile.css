@@ -1,0 +1,10 @@
+input[type='text']{
+				background-color: red;
+			}
+			input[type='password']{
+				font-size: 20px;
+			}
+div{
+	font: "微软雅黑";
+	font-size: 30px;
+}

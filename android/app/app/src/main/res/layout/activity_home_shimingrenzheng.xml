@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main">
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/rl_toolbar"
+        android:background="#F4F5F8">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="请输入真实银行卡信息，系统将通过银行完成您的身份验证"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/rl1"
+        android:background="#fff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/divide_15_dp"
+            android:text="姓名"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100dp"
+            android:background="@null"
+            android:hint="请输入真实姓名"
+            android:textColor="#666"
+            android:textColorHint="#bbb"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/rl2"
+        android:background="#fff">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#e5e5e5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/divide_15_dp"
+            android:text="身份证"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_shenfennum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100dp"
+            android:background="@null"
+            android:hint="请输入真实身份证号"
+            android:textColor="#666"
+            android:textColorHint="#bbb"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/rl3"
+        android:background="#F4F5F8">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="30dp"
+            android:text="银行卡信息（请务必使用和持卡人信息一致的卡号）"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_item"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/rl4"
+        android:background="#fff">
+
+        <TextView
+            android:id="@+id/tv_kaihubank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/divide_15_dp"
+            android:text="开户银行"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/activity_home_shiming_kaihu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100dp"
+            android:text="请选择开户银行"
+            android:textColor="#bbb"
+            android:textSize="16sp" />
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/right" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#e5e5e5" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/rl_item"
+        android:background="#fff">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/divide_15_dp"
+            android:text="银行卡号"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_yinhangcard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100dp"
+            android:background="@null"
+            android:hint="请输入银行卡号"
+            android:textColor="#666"
+            android:textColorHint="#bbb"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl6"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/rl5"
+        android:background="#fff">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e5e5e5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/divide_15_dp"
+            android:text="预留手机"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_yuliu_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100dp"
+            android:background="@null"
+            android:hint="请输入银行预留手机号码"
+            android:textColor="#666"
+            android:textColorHint="#bbb"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl7"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/rl6"
+        android:background="#fff">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e5e5e5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/divide_15_dp"
+            android:text="验证码"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_yanzhengma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100dp"
+            android:background="@null"
+            android:hint="短信验证码"
+            android:textColor="#666"
+            android:textColorHint="#bbb"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_getyanzhengma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:text="获取验证码"
+            android:textColor="#5AA0FF"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_shenfenyanzheng"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/rl7"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/divide20_dp"
+        android:layout_marginRight="@dimen/divide20_dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/bg_submit_gray"
+        android:enabled="false"
+        android:text="进行身份验证"
+        android:textColor="#fff"
+        android:textSize="16sp"/>
+
+    <CheckBox
+        android:id="@+id/iv_select4"
+        android:layout_width="15dp"
+        android:checked="true"
+        android:layout_height="15dp"
+        android:layout_below="@+id/bt_shenfenyanzheng"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/check_box_selector"
+        android:button="@null"
+        android:padding="5dp" />
+
+    <TextView
+        android:id="@+id/tv_agree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_shenfenyanzheng"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/iv_select4"
+        android:text="我已阅读并同意"
+        android:textColor="#999999"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_xieyi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_shenfenyanzheng"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="14dp"
+        android:layout_toRightOf="@+id/tv_agree"
+        android:text="《支付开通说明》"
+        android:textColor="#5aa0ff" />
+
+</RelativeLayout>

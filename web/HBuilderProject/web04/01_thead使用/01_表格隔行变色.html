@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>表格隔行换色</title>
+		<style>
+			
+		</style>
+		<script>
+			window.onload = function(){
+				var tBodies = document.getElementById("tbody")
+				var rowLength = tBodies.rows.length
+				for (var i = 0; i < rowLength; i++) {
+					if(i%2==0){
+						tBodies.rows[i].style.backgroundColor = "pink"
+					}else{
+						tBodies.rows[i].style.backgroundColor = "green"
+					}
+				}
+			}
+			
+			/*function loadFinish(){
+				
+			}*/
+		</script>
+	</head>
+	<body<!-- onload="loadFinish()"-->>
+		<table border="1" width="500" height="50" align="center" >
+			<thead>
+				<tr>
+					<th>编号</th>
+					<th>姓名</th>
+					<th>年龄</th>
+				</tr>
+			</thead>
+			<tbody id="tbody">
+				<tr >
+					<td>1</td>
+					<td>张三</td>
+					<td>22</td>
+				</tr>
+				<tr >
+					<td>2</td>
+					<td>李四</td>
+					<td>25</td>
+				</tr>
+				<tr >
+					<td>3</td>
+					<td>王五</td>
+					<td>27</td>
+				</tr>
+				<tr >
+					<td>4</td>
+					<td>赵六</td>
+					<td>29</td>
+				</tr>
+				<tr >
+					<td>5</td>
+					<td>田七</td>
+					<td>30</td>
+				</tr>
+				<tr >
+					<td>6</td>
+					<td>汾九</td>
+					<td>20</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>

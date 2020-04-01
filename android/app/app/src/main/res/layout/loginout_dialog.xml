@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+
+        <TextView
+            android:id="@+id/loginout_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="提示"
+            android:textColor="@color/color_333333"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/loginout_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="退出登录后您将无法查看您的收益情况，\n要确认退出？"
+            android:textColor="@color/color_666"
+            android:textSize="14sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/loginout_quxiao"
+                android:layout_width="@dimen/divide_0_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+                android:text="取消"
+                android:textColor="@color/text_Fc291d"
+                android:textSize="14sp"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/bg_main"/>
+
+            <TextView
+                android:id="@+id/loginout_sure"
+                android:layout_width="@dimen/divide_0_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+                android:text="退出"
+                android:textColor="@color/color_5aa0ff"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

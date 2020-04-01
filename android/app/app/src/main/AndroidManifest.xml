@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="finan.heng.com.apps"
+    android:versionCode="3"
+    android:versionName="1.0.1">
+
+    <!--    //地图包、搜索包需要的基础权限-->
+    <!--     允许程序打开网络套接字 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 允许程序设置内置sd卡的写权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许程序获取网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 允许程序访问WiFi网络信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 允许程序读写手机状态和身份 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 允许程序访问CellID或WiFi热点来获取粗略的位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- 蓝牙分享所需的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="xvtian.gai.receiver" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+
+    <application
+        android:name=".base.BaseApplication"
+        android:allowBackup="true"
+        android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="f91c88ff821f441ae756003305e47992" />
+
+        <service android:name=".base.MyService"
+            android:process=":ChangeIconAndName"/>
+
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+        <!-- 首页立即投资跳转 -->
+        <activity
+            android:name=".app.home.activity.TouziActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="立即投资"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <!-- 启动页 -->
+        <activity
+            android:name=".WelcomeActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity-alias
+            android:name=".Xingqiyi"
+            android:enabled="false"
+            android:icon="@mipmap/a"
+            android:label="周一的鸣鸣"
+            android:targetActivity=".WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:name=".Xingqier"
+            android:enabled="false"
+            android:icon="@mipmap/b"
+            android:label="周二的鸣鸣"
+            android:targetActivity=".WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:name=".Xingqisan"
+            android:enabled="false"
+            android:icon="@mipmap/c"
+            android:label="周三的鸣鸣"
+            android:targetActivity=".WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:name=".Xingqisi"
+            android:enabled="false"
+            android:icon="@mipmap/d"
+            android:label="周四的鸣鸣"
+            android:targetActivity=".WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:name=".Xingqiwu"
+            android:enabled="false"
+            android:icon="@mipmap/e"
+            android:label="周五的鸣鸣"
+            android:targetActivity=".WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:name=".Xingqiliu"
+            android:enabled="false"
+            android:icon="@mipmap/f"
+            android:label="周六的鸣鸣"
+            android:targetActivity=".WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:name=".Xingqiqi"
+            android:enabled="false"
+            android:icon="@mipmap/g"
+            android:label="周日的鸣鸣"
+            android:targetActivity=".WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+
+        <!-- 投资成功 -->
+        <activity
+            android:name=".app.home.activity.TouziSuccessActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="投资成功"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <!-- 实名认证 -->
+        <activity
+            android:name=".app.home.activity.ShiMingRenZhengActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="实名认证"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <!-- 交易记录 -->
+        <activity
+            android:name=".app.my.activity.JiaoYiJiLuActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="交易记录"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <!-- 充值 -->
+        <activity
+            android:name=".app.my.activity.ChongZhiOrTiXianActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="充值"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <!-- 充值成功 -->
+        <activity
+            android:name=".app.my.activity.ChongZhiOrTiXianSuccessActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="充值成功"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <!-- CustomLocationActivity -->
+        <!-- LocationModeSourceActivity -->
+        <!-- LocationModeSourceActivity_Old -->
+
+
+        <!-- 投资记录 -->
+        <activity
+            android:name=".app.my.activity.TouZiJiLuActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="投资记录"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <!-- 优惠券 -->
+        <activity
+            android:name=".app.my.activity.YouHuiQuanActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="优惠券"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <!-- 消息中心 -->
+        <activity
+            android:name=".app.my.activity.MessageCenterActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="消息中心"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <!-- 公告详情 -->
+        <activity
+            android:name=".app.my.activity.GongGaoDetailActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="公告详情"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <!-- 个人设置 -->
+        <activity
+            android:name=".app.my.activity.SettingActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="个人设置"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <!-- 实名认证通过 -->
+        <activity
+            android:name=".app.home.activity.ShiMingPassActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="实名认证通过"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <!-- 我的银行卡 -->
+        <activity
+            android:name=".app.home.activity.MyBankCardActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="我的银行卡"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <!-- 银行卡名字列表 -->
+        <activity
+            android:name=".app.my.activity.BankListActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="银行卡名字列表"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <!-- 修改登录密码 -->
+        <activity
+            android:name=".app.home.activity.ReviseLoginMimaActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="修改登录密码"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <!-- 修改交易密码 -->
+        <activity
+            android:name=".app.home.activity.ReviseJiaoYiMimaActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="修改交易密码"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <!-- 找回交易密码 -->
+        <activity
+            android:name=".app.home.activity.FindJiaoYiMimaActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="找回交易密码"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <!-- 设置交易密码 -->
+        <activity
+            android:name=".app.home.activity.SetJiaoYiMimaActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="设置交易密码"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <!-- 规则说明 -->
+        <activity
+            android:name=".app.my.activity.GuizeShuomingActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="规则说明"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <!-- 产品详情列表页 -->
+        <activity
+            android:name=".app.finance.activity.ProductDetailListActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="产品详情列表页"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <!-- 产品详情页 -->
+        <activity
+            android:name=".app.finance.activity.ProductDetailActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="产品详情页"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <!-- 关于我们 -->
+        <activity
+            android:name=".app.my.activity.AboutUsActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="关于我们"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <!-- 意见反馈 -->
+        <activity
+            android:name=".app.my.activity.YiJianFanKuiActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="关于我们"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <!-- 图片展示 -->
+        <activity
+            android:name=".app.finance.activity.PicShowActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="图片展示"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <!-- 帮助中心 -->
+        <activity
+            android:name=".app.my.activity.HelpCenterActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="帮助中心"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <!-- 照片大图展示 -->
+        <activity
+            android:name=".app.finance.activity.BigPicActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="照片大图展示"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <!-- 照片大图展示 -->
+        <activity
+            android:name=".kotlin.kapp.kmy.KPicShowActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="照片大图展示"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <!-- 邀请好友 -->
+        <activity
+            android:name=".app.my.activity.InviteFriendActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="邀请好友"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <!-- 邀请记录 -->
+        <activity
+            android:name=".app.my.activity.InviteHistoryActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="邀请记录"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <!-- 自定义瀑布流 -->
+        <activity
+            android:name=".kotlin.kapp.kmanage.KWaterActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="自定义瀑布流"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <!-- 登陆 -->
+        <activity
+            android:name=".LoginActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="登陆"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <!-- 注册 -->
+        <activity
+            android:name=".app.my.activity.RegisterActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="注册"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <!-- 忘记密码 -->
+        <activity
+            android:name=".app.my.activity.ForgetPasswordActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="忘记密码"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <!-- h5 -->
+        <activity
+            android:name=".WebActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="h5"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <!-- 首页ScrollText详情 -->
+        <activity
+            android:name=".app.home.activity.HomeScrollTextActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="首页ScrollText详情"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <!-- 找回密码2 -->
+        <activity
+            android:name=".app.my.activity.ForgetPasswordActivity2"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="找回密码2"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <!-- 高德地图 -->
+        <activity
+            android:name=".gaode.MapShowActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="高德地图"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <!-- 高德地图 -->
+        <!-- kotlin首页 -->
+        <activity
+            android:name=".kotlin.KotlinMain"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="KOTLIN首页"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <!-- kotlin首页 -->
+        <activity
+            android:name=".two_page_up_down.KUpDownActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="上下分页布局"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <!-- 冲值列表 -->
+        <activity
+            android:name=".app.my.activity.ChongZhiListActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="冲值列表"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <!-- 充值成功 -->
+        <activity
+            android:name=".PayH5Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="充值成功"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <!-- KProductDetailActivity -->
+        <activity
+            android:name=".kotlin.kapp.kassets.KProductDetailActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="KPDActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            tools:ignore="LockedOrientationActivity">
+            <intent-filter>
+                <data android:scheme="tencent1106101741" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!-- 调用新浪原生SDK，需要注册的回调activity -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!--微信分享回调 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            tools:ignore="LockedOrientationActivity" />
+
+        <!-- KScrollBarLayoutActivity -->
+        <activity
+            android:name=".two_page_refresh_load.KScrollBarLayoutActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="KPDActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <!-- KPicAnimationActivity -->
+        <activity
+            android:name=".two_page_refresh_load.KPicAnimationActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="KPDActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <!-- KSwipe_Viewpager_RecyclerView_Activity -->
+        <activity
+            android:name=".two_page_refresh_load.KSwipe_Viewpager_RecyclerView_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="KPDActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <!-- KScrollBarLayoutTitleStyleActivity -->
+        <activity
+            android:name=".two_page_refresh_load.KScrollBarLayoutTitleStyleActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="KPDActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".red_pag_rain.WXRedPacActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="KPDActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".red_pag_rain.QRedPacActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="KPDActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".app.my.activity.LayoutActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="KPDActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+
+    </application>
+
+</manifest>

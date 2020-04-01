@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:src="@mipmap/icon" />
+
+    <TextView
+        android:id="@+id/activity_about_us_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/color_333333"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/activity_about_us_jianjie"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="@dimen/divide_0_dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:text="平台简介"
+            android:textColor="@color/color_333333"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/right" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:background="@color/color_e5" />
+
+    <LinearLayout
+        android:id="@+id/activity_about_us_dafen"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="@dimen/divide_0_dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:text="给恒利来打分"
+            android:textColor="@color/color_333333"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/right" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:background="@color/color_e5" />
+
+    <LinearLayout
+        android:id="@+id/activity_about_us_yijian"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="@dimen/divide_0_dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:text="意见反馈"
+            android:textColor="@color/color_333333"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/right" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/activity_about_us_company"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divide_0_dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|bottom"
+        android:textColor="@color/color_999999"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/activity_about_us_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:textColor="@color/color_999999"
+        android:textSize="13sp" />
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_yoouhui_quan_hg"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="@dimen/divide_10_dp"
+    android:layout_marginTop="10dp">
+    <TextView
+        android:id="@+id/tv_jine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="25dp"
+        android:text="200"
+        android:textColor="#ffffff"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_jine"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="15dp"
+        android:text="30天后过期"
+        android:textColor="#ffffff"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/xinshou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_date"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="新手奖励"
+        android:textColor="#E1DCDC"
+        android:textSize="9sp" />
+
+    <TextView
+        android:id="@+id/tv_danbitouzi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="14dp"
+        android:layout_toRightOf="@+id/tv_jine"
+        android:text="单笔投资20000元激活"
+        android:textColor="#333333"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/isselect"
+        android:layout_width="@dimen/divide20_dp"
+        android:layout_height="@dimen/divide20_dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/select4"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_shiyongyu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_danbitouzi"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="24dp"
+        android:layout_toRightOf="@+id/tv_jine"
+        android:textColor="#999999"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_youxiaoqi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_shiyongyu"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/tv_jine"
+        android:textColor="#999999"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_quanpinlei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_youxiaoqi"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/tv_jine"
+        android:textColor="#999999"
+        android:textSize="12sp" />
+
+
+</RelativeLayout>

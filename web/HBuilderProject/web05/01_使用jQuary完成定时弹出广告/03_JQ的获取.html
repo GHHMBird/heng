@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>JQ的获取</title>
+		<script type="text/javascript" src="../js/jquery-1.8.3.js" ></script>
+		<script>
+			//传统方法
+			/*$(function(){
+				document.getElementById("btn").onclick=function(){
+					alert("我被电了")
+				}
+			})*/
+			
+			//JQ方法
+			$(function(){
+				$("#btn").click(function(){
+					alert("我被电了")
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<input type="button" value="点我" id="btn"/>
+	</body>
+</html>

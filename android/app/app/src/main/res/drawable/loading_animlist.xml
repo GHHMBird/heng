@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+
+    <item
+        android:drawable="@drawable/load0"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/load1"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/load2"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/load3"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/load4"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/load5"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/load6"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/load7"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/load8"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/load9"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/load10"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/load11"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/load12"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/load13"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/load14"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/load15"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/load16"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/load17"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/load18"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/load19"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/load20"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/load21"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/load22"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/load23"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/load24"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/load25"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/load26"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/load27"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/load28"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/load29"
+        android:duration="33" />
+
+</animation-list>

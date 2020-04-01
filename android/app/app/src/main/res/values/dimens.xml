@@ -1,0 +1,25 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="divide_0_dp">0dp</dimen>
+    <dimen name="divide_0.1_dp">0.1dp</dimen>
+    <dimen name="divide_12_dp">12dp</dimen>
+    <dimen name="divide_14_dp">14dp</dimen>
+    <dimen name="divide_18_dp">18dp</dimen>
+    <dimen name="divide_5_dp">5dp</dimen>
+    <dimen name="divide_1_dp">1dp</dimen>
+    <dimen name="divide_0.05_dp">0.05dp</dimen>
+    <dimen name="divide_30_dp">30dp</dimen>
+    <dimen name="divide_15_dp">15dp</dimen>
+    <dimen name="divide_40_dp">40dp</dimen>
+    <dimen name="divide_16_dp">16dp</dimen>
+    <dimen name="divide_80_dp">80dp</dimen>
+    <dimen name="divide_20_dp">20dp</dimen>
+    <dimen name="divide_10_dp">10dp</dimen>
+    <dimen name="divide20_dp">20dp</dimen>
+    <dimen name="divide_25_dp">25dp</dimen>
+    <dimen name="divide_100_dp">100dp</dimen>
+    <dimen name="tab_radius">20dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

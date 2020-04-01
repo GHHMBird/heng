@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/rl_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+                                           xmlns:app="http://schemas.android.com/apk/res-auto"
+                                           android:id="@+id/toolbar"
+                                           android:layout_width="match_parent"
+                                           android:layout_height="?attr/actionBarSize"
+                                           android:background="@color/white"
+                                           app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                                           app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <TextView
+                android:id="@+id/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:textColor="@color/color_333333"
+                android:textSize="18sp"/>
+        </android.support.v7.widget.Toolbar>
+
+        <RelativeLayout
+            android:id="@+id/back_btn"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize">
+
+            <ImageView
+                android:id="@+id/iv_bar_back"
+                android:layout_width="10dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:layout_height="15dp"
+                android:background="@mipmap/left"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tool_bar_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentRight="true"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:id="@+id/tool_bar_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="15dp"
+                android:text="邀请记录"
+                android:textColor="@color/color_333333"
+                android:textSize="16sp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="一、好友注册时填入您的二维码:"
+                android:textColor="@color/color_333333"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/activity_invite_friend_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/text_Fc291d"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:text="二、让好友扫描下方二维码进入专属注册入口,注册成功即为您的推荐好友"
+                android:textColor="@color/color_333333"
+                android:textSize="14sp"/>
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/activity_invite_friend_iv"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:text="二、通过社交媒体分享您的专属注册链接"
+                android:textColor="@color/color_333333"
+                android:textSize="14sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bg_main"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/activity_invite_friend_iv_one"
+                        android:layout_width="@dimen/divide_0_dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableTop="@mipmap/qq"
+                        android:gravity="center"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="QQ好友"/>
+
+                    <TextView
+                        android:id="@+id/activity_invite_friend_iv_two"
+                        android:layout_width="@dimen/divide_0_dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableTop="@mipmap/qzone"
+                        android:gravity="center"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="QQ空间"/>
+
+                    <TextView
+                        android:id="@+id/activity_invite_friend_iv_three"
+                        android:layout_width="@dimen/divide_0_dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableTop="@mipmap/wechat"
+                        android:gravity="center"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="微信好友"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bg_main"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/activity_invite_friend_iv_four"
+                        android:layout_width="@dimen/divide_0_dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableTop="@mipmap/moments"
+                        android:gravity="center"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="朋友圈"/>
+
+                    <TextView
+                        android:id="@+id/activity_invite_friend_iv_five"
+                        android:layout_width="@dimen/divide_0_dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableTop="@mipmap/message"
+                        android:gravity="center"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="短信"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/divide_0_dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/activity_invite_friend_end_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="20dp"
+                android:drawableRight="@mipmap/right"
+                android:gravity="center"
+                android:text="查看邀请奖励规则"
+                android:textColor="@color/text_Fc291d"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

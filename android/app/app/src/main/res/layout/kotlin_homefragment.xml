@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_eeeeee">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.youth.banner.Banner
+                android:id="@+id/kotlin_homefragment_banner"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@color/white">
+
+            </com.youth.banner.Banner>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:layout_width="@dimen/divide20_dp"
+                    android:layout_height="@dimen/divide20_dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@mipmap/ic_tip" />
+
+                <finan.heng.com.apps.utils.ScollTextView
+                    android:id="@+id/kotlin_homefragment_scolltextview"
+                    android:layout_width="@dimen/divide_0_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1">
+
+                </finan.heng.com.apps.utils.ScollTextView>
+
+                <ImageView
+                    android:layout_width="@dimen/divide20_dp"
+                    android:layout_height="@dimen/divide20_dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@mipmap/arrow_right" />
+
+            </LinearLayout>
+
+            <GridView
+                android:id="@+id/kotlin_homefragment_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:numColumns="4"
+                android:scrollbars="none">
+
+            </GridView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp"
+                    android:text="推荐标"
+                    android:textColor="@color/color_333333"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp"
+                    android:text="预期年化收益"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginTop="7dp"
+                    android:gravity="bottom|center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right|bottom"
+                        android:text="7.00"
+                        android:textColor="@color/bg_mainColor"
+                        android:textSize="27sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|bottom"
+                        android:text="%"
+                        android:textColor="@color/bg_mainColor"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:layout_width="@dimen/divide_0_dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right|center_vertical"
+                        android:text="10天"
+                        android:textColor="@color/bg_mainColor"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="@dimen/divide_0_dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:text="期限"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/color_eeeeee" />
+
+                    <TextView
+                        android:layout_width="@dimen/divide_0_dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right|center_vertical"
+                        android:text="100元"
+                        android:textColor="@color/bg_mainColor"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="@dimen/divide_0_dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:text="起投"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/color_eeeeee" />
+
+                    <TextView
+                        android:layout_width="@dimen/divide_0_dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right|center_vertical"
+                        android:text="D+1"
+                        android:textColor="@color/bg_mainColor"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="@dimen/divide_0_dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:text="起息"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/kotlin_homefragment_btn"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/bg_btn_home_pro"
+                    android:text="立即购买"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/color_eeeeee"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@mipmap/ic_security_money" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="资金安全全程由新浪支付提供安全保障"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

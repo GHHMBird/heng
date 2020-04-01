@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="65dp"
+              android:background="@color/white"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="adwadwad"
+            android:id="@+id/all_trade_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/color_333333"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:text="dadadawd"
+            android:id="@+id/all_trade_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/color_bbbbbb"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/all_trade_item_money"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:textColor="@color/color_5db36b"
+        android:textSize="16sp"/>
+
+</LinearLayout>

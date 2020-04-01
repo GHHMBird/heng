@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <finan.heng.com.apps.utils.lgdpulltorefresh.PullToRefreshView
+        android:id="@+id/pulltorefreshview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <finan.heng.com.apps.utils.MyScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/fragment_touzi_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bg_main">
+
+                </android.support.v7.widget.RecyclerView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                    <TextView
+                        android:id="@+id/tv_nomore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="40dp"
+                        android:text="无更多可用红包"/>
+
+                    <TextView
+                        android:id="@+id/tv_chakanshixiao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="40dp"
+                        android:text="查看已失效"
+                        android:textColor="#6BAAFE"/>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </finan.heng.com.apps.utils.MyScrollView>
+    </finan.heng.com.apps.utils.lgdpulltorefresh.PullToRefreshView>
+
+
+</LinearLayout>

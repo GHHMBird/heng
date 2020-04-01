@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>DOM对象与JQ对象</title>
+		<script type="text/javascript" src="../js/jquery-1.8.3.js" ></script>
+		<script>
+			function domClick(){
+				//JS对象无法操作JQ里面的属性和方法！！！！！
+				//$("#spantext").html("jq写入")
+				
+				//正确写法
+				document.getElementById("spantext").innerHTML = "dom写入"
+				
+				//JS对象转换为JQ对象
+				var spans = document.getElementById("spantext")
+				$(spans).html("JS转JQ写入")
+			}
+			$(function(){
+				$("#jqbtn").click(function(){
+					//JQ对象无法操作JS里面的属性和方法！！！！！
+					//$("#spantext").innerHTML="jq写入"
+					
+					//正确写法
+					$("#spantext").html("jq写入")
+					
+					//JQ对象转换为JS对象--方式1
+					$("#spantext").get(0).innerHTML = "JQ转JS写入"
+					
+					//JQ对象转换为JS对象--方式2
+					$("#spantext")[0].innerHTML = "JQ转JS写入"
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<input type="button" value="dom写入" id="dombtn" onclick="domClick()"/>
+		<input type="button" value="jq写入" id="jqbtn" /><br />
+		<span id="spantext">
+			初始文字
+		</span>
+	</body>
+</html>

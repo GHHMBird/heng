@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<hhm>
+	<test1>
+		test
+	</test1>
+	<test2 version="1" id="1">
+		test2
+	</test2>
+	<aaa>&lt;AAAAA</aaa>
+	
+	<![CDATA[
+		if(a>b&&b>c||c>d){
+			a=b=c=d
+		}
+	]]>
+	
+	<bbb/>
+</hhm>

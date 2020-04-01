@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="#F4F5F8"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <include layout="@layout/toolbar" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您已通过实名认证，如需帮助请联系客服"
+            android:layout_marginLeft="@dimen/divide_15_dp"
+            android:textSize="13sp"
+            android:textColor="#999999"
+            android:layout_marginTop="@dimen/divide20_dp"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:id="@+id/rl_shiming"
+        android:layout_below="@+id/view10">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="真实姓名"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/divide_15_dp"
+            android:textSize="16sp"
+            android:textColor="#333333"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="常**"
+            android:id="@+id/realname"
+            android:textSize="12sp"
+            android:textColor="#999999"
+            android:layout_marginRight="16dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/rl3"
+        android:background="#ffffff">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#e5e5e5"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="身份证号"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/divide_15_dp"
+            android:textSize="16sp"
+            android:textColor="#333333"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2314451889*****3233"
+            android:id="@+id/idcard"
+            android:textColor="#999999"
+            android:layout_marginRight="16dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            />
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

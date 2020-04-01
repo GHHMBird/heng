@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/kotlin_managefragment2_btn1"
+            android:layout_width="@dimen/divide_0_dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="列表" />
+
+        <Button
+            android:id="@+id/kotlin_managefragment2_btn2"
+            android:layout_width="@dimen/divide_0_dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="GridView" />
+
+        <Button
+            android:id="@+id/kotlin_managefragment2_btn3"
+            android:layout_width="@dimen/divide_0_dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="瀑布流" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/kotlin_managefragment2_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

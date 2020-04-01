@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PullToRefreshView">
+        <attr name="type" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="SlideDetailsLayout">
+        <!-- float value for indicate the moment of switch panel-->
+        <attr name="percent" format="float" />
+        <!-- how long the animation keep-->
+        <attr name="duration" format="integer" />
+        <!-- default panel to show after init-->
+        <attr name="default_panel" format="enum">
+            <enum name="front" value="0" />
+            <enum name="behind" value="1" />
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="CountdownView">
+        <attr name="isHideTimeBackground" format="boolean" />
+        <attr name="isShowTimeBgDivisionLine" format="boolean" />
+        <attr name="timeBgDivisionLineColor" format="color" />
+        <attr name="timeBgDivisionLineSize" format="dimension" />
+        <attr name="timeBgColor" format="color" />
+        <attr name="timeBgSize" format="dimension" />
+        <attr name="timeBgRadius" format="dimension" />
+
+        <attr name="isTimeTextBold" format="boolean" />
+        <attr name="timeTextSize" format="dimension" />
+        <attr name="timeTextColor" format="color" />
+        <attr name="isShowDay" format="boolean" />
+        <attr name="isShowHour" format="boolean" />
+        <attr name="isShowMinute" format="boolean" />
+        <attr name="isShowSecond" format="boolean" />
+        <attr name="isShowMillisecond" format="boolean" />
+
+        <attr name="isSuffixTextBold" format="boolean" />
+        <attr name="suffixTextSize" format="dimension" />
+        <attr name="suffixTextColor" format="color" />
+        <attr name="suffix" format="string" />
+        <attr name="suffixDay" format="string" />
+        <attr name="suffixHour" format="string" />
+        <attr name="suffixMinute" format="string" />
+        <attr name="suffixSecond" format="string" />
+        <attr name="suffixMillisecond" format="string" />
+        <attr name="suffixGravity">
+            <enum name="top" value="0" />
+            <enum name="center" value="1" />
+            <enum name="bottom" value="2" />
+        </attr>
+        <attr name="suffixLRMargin" format="dimension" />
+        <attr name="suffixDayLeftMargin" format="dimension" />
+        <attr name="suffixDayRightMargin" format="dimension" />
+        <attr name="suffixHourLeftMargin" format="dimension" />
+        <attr name="suffixHourRightMargin" format="dimension" />
+        <attr name="suffixMinuteLeftMargin" format="dimension" />
+        <attr name="suffixMinuteRightMargin" format="dimension" />
+        <attr name="suffixSecondLeftMargin" format="dimension" />
+        <attr name="suffixSecondRightMargin" format="dimension" />
+        <attr name="suffixMillisecondLeftMargin" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="RedPacketStyle">
+        <attr name="count" format="integer" />
+        <attr name="speed" format="integer" />
+        <attr name="max_size" format="float" />
+        <attr name="min_size" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="HHMTextView">
+        <attr name="HHMTextView_hhm_text" format="string" />
+        <attr name="HHMTextView_hhm_textColor" format="color" />
+        <attr name="HHMTextView_hhm_textSize" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="HHMButton">
+        <attr name="HHMButton_hhm_text" format="string" />
+        <attr name="HHMButton_hhm_textColor" format="color" />
+        <attr name="HHMButton_hhm_clickable" format="boolean" />
+        <attr name="HHMButton_hhm_textSize" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="HHMView">
+        <attr name="HHMView_text" format="string" />
+    </declare-styleable>
+</resources>

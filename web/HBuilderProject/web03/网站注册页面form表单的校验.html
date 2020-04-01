@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>网站注册页面form表单的校验</title>
+		<script>
+			function checkForm(){
+				
+				var password = document.getElementById("密码").value
+				if(""==password){
+					alert("密码不能为空")
+					return false
+				}
+				var password2 = document.getElementById("确认密码").value
+				if(password!=password2){
+					alert("两次密码输入不一致")
+					return false
+				}
+				var email = document.getElementById("email").value;
+				if (!/^1[358]{9}/.test(email)) {
+					alert("电话号码不正确")
+					return false
+				}
+			}
+			function tip(id,text){
+				document.getElementById(id).innerHTML="<font color='gray'>"+text+"</font>"
+			}
+			function check(id,id2,text){
+				var username=document.getElementById(id).value
+				if(""==username){
+					document.getElementById(id2).innerHTML="<font color='red'>"+text+"</font>"
+				}else{
+					document.getElementById(id2).innerHTML=""
+				}
+			}
+		</script>
+	</head>
+	<form action="#" method="get" name="registerForm" onsubmit="return checkForm()">
+		<table border="1px" align="center" width="1300px" cellpadding="0px" cellspacing="0px">
+			<tr>
+				<td>
+					<table width="100%" height="47px">
+						<tr>
+							<td width="33%">
+								<img src="img/img/logo2.png" />
+							</td>
+							<td width="33%">
+								<img src="img/img/header.png" />
+							</td>
+							<td>
+								<a href="#"><font>登陆</font></a>&nbsp;&nbsp;
+								<a href="#"><font>注册</font></a>&nbsp;&nbsp;
+								<a href="#"><font>购物车</font></a>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td bgcolor="black" height="50px">
+					&nbsp;&nbsp;<a href="#"><font color="white" size="=4">首页</font></a>&nbsp;&nbsp;
+					&nbsp;&nbsp;<a href="#"><font color="white" size="=4">手机数码</font></a>&nbsp;&nbsp;
+					&nbsp;&nbsp;<a href="#"><font color="white" size="=4">电脑办公</font></a>&nbsp;&nbsp;
+					&nbsp;&nbsp;<a href="#"><font color="white" size="=4">鞋靴箱包</font></a>&nbsp;&nbsp;
+					&nbsp;&nbsp;<a href="#"><font color="white" size="=4">家用电器</font></a>
+				</td>
+			</tr>
+			<tr>
+				<td height="600px" align="center" background="img/img/regist_bg.jpg">
+					<table border="1px" width="750px" height="400px" bgcolor="white" cellpadding="0px" cellspacing="0px">
+						<tr>
+							<td colspan="2" height="40px">
+								<font color="blue" size="4">会员注册</font>&nbsp;&nbsp;USER&nbsp;&nbsp;REGISTER
+							</td>
+						</tr>
+						<tr>
+							<td align="center">
+								用户名
+							</td>
+							<td>
+								<font color="#FF0000">*</font><input onblur="check('username','userspan','用户名不能为空')" id="username" type="text" name="用户名" size="35px" onfocus="tip('userspan','请输入用户名')"/><span id="userspan"></span>
+							</td>
+						</tr>
+						<tr>
+							<td align="center">
+								密码
+							</td>
+							<td>
+								<font color="#FF0000">*</font><input onblur="check('密码','passwordspan','密码不能为空')"  type="password" id="密码" name="密码" size="35px" onfocus="tip('passwordspan','请输入密码')"/><span id="passwordspan"></span>
+							</td>
+						</tr>
+						<tr>
+							<td align="center">
+								确认密码
+							</td>
+							<td>
+								<input type="password" id="确认密码" name="确认密码" size="35px"/>
+							</td>
+						</tr>
+						<tr>
+							<td align="center">
+								电话
+							</td>
+							<td>
+								<input type="text" id="email" name="Email" size="35px"/>
+							</td>
+						</tr>
+						<tr>
+							<td align="center">
+								姓名
+							</td>
+							<td>
+								<input type="text" name="姓名" size="35px"/>
+							</td>
+						</tr>
+						<tr>
+							<td align="center">
+								性别
+							</td>
+							<td>
+								<input type="radio" name="性别" value="男" checked="checked"/>男
+								<input type="radio" name="性别" value="女"/>女
+							</td>
+						</tr>
+						<tr>
+							<td align="center">
+								出生日期
+							</td>
+							<td>
+								<input type="text" name="出生日期" size="35px"/>
+							</td>
+						</tr>
+						<tr>
+							<td align="center">
+								验证码
+							</td>
+							<td>
+								<input type="text" name="验证码"/>
+								<img src="img/img/yanzhengma.png" />
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<input type="submit" value="注册" />
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<img src="img/img/footer.jpg" width="100%" />
+				</td>
+			</tr>
+			<!--友情链接-->
+			<tr>
+				<td height="50px" align="center">
+					<a href="关于我们/关于我们.html" target="_blank"><font color="deepskyblue">关于我们</font></a>&nbsp;&nbsp;
+					<a href="#"><font color="deepskyblue">联系我们</font></a>&nbsp;&nbsp;
+					<a href="#"><font color="deepskyblue">招贤纳士</font></a>&nbsp;&nbsp;
+					<a href="#"><font color="deepskyblue">法律声明</font></a>&nbsp;&nbsp;
+					<a href="#"><font color="deepskyblue">友情链接</font></a>&nbsp;&nbsp;
+					<a href="#"><font color="deepskyblue">支付方式</font></a>&nbsp;&nbsp;
+					<a href="#"><font color="deepskyblue">配送方式</font></a>&nbsp;&nbsp;
+					<a href="#"><font color="deepskyblue">服务声明</font></a>&nbsp;&nbsp;
+					<a href="#"><font color="deepskyblue">广告声明</font></a><br />
+						<font color="black">Copyright © 2005-2016 传智商城 版权所有</font>
+				</td>
+			</tr>
+		</table>
+	</form>
+</html>

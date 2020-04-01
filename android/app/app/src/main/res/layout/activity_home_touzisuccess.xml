@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main">
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/rl_success"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_below="@+id/rl_toolbar"
+        android:background="#f4f5f8">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#cccccc" />
+
+        <ImageView
+            android:id="@+id/iv_iconsuccess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp"
+            android:src="@mipmap/done3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_iconsuccess"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="恭喜您！投资成功" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_youhuiquan"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/rl_success"
+        android:background="#fff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="投资金额"
+            android:textColor="#333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_jine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:text="10000"
+            android:textColor="#666666"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/rl_youhuiquan"
+        android:background="#e5e5e5" />
+
+    <RelativeLayout
+        android:id="@+id/rl_qixian"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/view3"
+        android:background="#fff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="期限"
+            android:textColor="#333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_qixian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:text="30天"
+            android:textColor="#666666"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/rl_qixian"
+        android:background="#e5e5e5" />
+
+    <RelativeLayout
+        android:id="@+id/rl_zongshouyi"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/rl_qixian"
+        android:background="#fff">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#e5e5e5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="预估总收益"
+            android:textColor="#333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_zongshouyi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:text="135.68"
+            android:textColor="#666666"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/rl_zongshouyi"
+        android:background="#e5e5e5" />
+
+    <Button
+        android:id="@+id/bt_touzisuccess"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/view5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/divide20_dp"
+        android:layout_marginRight="@dimen/divide20_dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/bg_submit_red"
+        android:text="完成"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>

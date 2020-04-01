@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="注册/登陆"
+                android:textColor="@color/color_666"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:id="@+id/activity_help_center_ll_one"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="注册时,进行手机验证,收不到短信怎么办?"
+                    android:textColor="@color/color_333333"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/activity_help_center_iv_one"
+                    android:layout_width="@dimen/divide20_dp"
+                    android:layout_height="@dimen/divide20_dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@mipmap/right" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_help_center_ll_two"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="手机验证以后还可以修改吗?"
+                    android:textColor="@color/color_333333"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/activity_help_center_iv_two"
+                    android:layout_width="@dimen/divide20_dp"
+                    android:layout_height="@dimen/divide20_dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@mipmap/right" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_help_center_ll_three"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="为什么提示手机号已存在?"
+                    android:textColor="@color/color_333333"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/activity_help_center_iv_three"
+                    android:layout_width="@dimen/divide20_dp"
+                    android:layout_height="@dimen/divide20_dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@mipmap/right" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_help_center_ll_four"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="我登录失败怎么办?"
+                    android:textColor="@color/color_333333"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/activity_help_center_iv_four"
+                    android:layout_width="@dimen/divide20_dp"
+                    android:layout_height="@dimen/divide20_dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@mipmap/right" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_help_center_ll_five"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="忘记注册手机号怎么办?"
+                    android:textColor="@color/color_333333"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/activity_help_center_iv_five"
+                    android:layout_width="@dimen/divide20_dp"
+                    android:layout_height="@dimen/divide20_dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@mipmap/right" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="账户密码"
+                android:textColor="@color/color_666"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:id="@+id/activity_help_center_ll_six"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="如何修改登录密码?"
+                    android:textColor="@color/color_333333"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/activity_help_center_iv_six"
+                    android:layout_width="@dimen/divide20_dp"
+                    android:layout_height="@dimen/divide20_dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@mipmap/right" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_help_center_ll_seven"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="如何找回登录密码?"
+                    android:textColor="@color/color_333333"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/activity_help_center_iv_seven"
+                    android:layout_width="@dimen/divide20_dp"
+                    android:layout_height="@dimen/divide20_dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@mipmap/right" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_help_center_ll_eight"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="我的手机号换了，该如何修改?"
+                    android:textColor="@color/color_333333"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/activity_help_center_iv_eight"
+                    android:layout_width="@dimen/divide20_dp"
+                    android:layout_height="@dimen/divide20_dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@mipmap/right" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

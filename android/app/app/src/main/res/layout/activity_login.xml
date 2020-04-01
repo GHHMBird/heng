@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<finan.heng.com.apps.utils.SlidingFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/act_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/icon" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divide_0.1_dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/color_cccccc" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/divide_10_dp">
+
+            <EditText
+                android:id="@+id/cet_input_account"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginRight="@dimen/divide_15_dp"
+                android:background="@null"
+                android:drawableLeft="@mipmap/zhanghu"
+                android:drawablePadding="15dp"
+                android:hint="手机号码"
+                android:inputType="number"
+                android:maxLength="11"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColorHint="@color/color_cccccc"
+                android:textSize="@dimen/divide_16_dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divide_0.1_dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/color_cccccc" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/divide_10_dp">
+
+            <EditText
+                android:id="@+id/cet_input_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginRight="@dimen/divide_15_dp"
+                android:background="@null"
+                android:drawableLeft="@mipmap/mima"
+                android:drawablePadding="15dp"
+                android:ems="10"
+                android:hint="账户密码"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColorHint="@color/color_cccccc"
+                android:textSize="@dimen/divide_16_dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divide_0.1_dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/color_cccccc" />
+
+        <Button
+            android:id="@+id/bt_login"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_unclick"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="登录"
+            android:textColor="@color/white"
+            android:textSize="@dimen/divide_16_dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divide_0_dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="right"
+                android:layout_marginBottom="@dimen/divide_10_dp"
+                android:layout_marginLeft="25dp"
+                android:text="用户注册"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/divide_16_dp" />
+
+
+            <TextView
+                android:id="@+id/tv_forget_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:layout_marginBottom="@dimen/divide_10_dp"
+                android:layout_marginRight="25dp"
+                android:text="忘记密码"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/divide_16_dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/activity_login_fl"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+</finan.heng.com.apps.utils.SlidingFrameLayout>

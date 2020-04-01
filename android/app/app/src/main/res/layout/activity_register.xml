@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <include layout="@layout/layout_regest"/>
+
+            <include layout="@layout/layout_rgbuttom"/>
+
+            <Button
+                android:id="@+id/bt_submit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="@dimen/divide_30_dp"
+                android:background="@drawable/btn_unclick"
+                android:gravity="center"
+                android:enabled="false"
+                android:layout_marginBottom="20dp"
+                android:text="提交"
+                android:textColor="@color/white"
+                android:textSize="@dimen/divide_16_dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divide_30_dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divide_30_dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="#333333"
+                        android:id="@+id/text1"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/divide_15_dp"
+                        android:text="收不到验证码？请拨打客服电话："/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textSize="12sp"
+                        android:text="400011111"
+                       android:layout_toRightOf="@+id/text1"
+                        android:textColor="@color/color_5aa0ff"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>表格跨行跨列操作</title>
+	</head>
+	<body>
+		<table border="1px" width="500px" height="200px" align="center" cellspacing="0px" cellpadding="0px">
+			<tr>
+				<td colspan="2" align="center">
+					<img src="../../img/img4.jpg" width="100%" height="100%"/>
+				</td>
+				<td>13</td>
+				<td>14</td>
+			</tr>
+			<tr>
+				<td>21</td>
+				<td colspan="2" align="center" rowspan="2">
+					<table border="1px" cellpadding="0px" cellspacing="0px" width="100%" height="100%">
+						<tr>
+							<td>A11</td>
+							<td>A12</td>
+							<td>A13</td>
+						</tr>
+						<tr>
+							<td>A21</td>
+							<td>A22</td>
+							<td>A23</td>
+						</tr>
+						<tr>
+							<td>A31</td>
+							<td>A32</td>
+							<td>A33</td>
+						</tr>
+					</table>
+				</td>
+				<td>24</td>
+			</tr>
+			<tr>
+				<td>31</td>
+				<td rowspan="2">34</td>
+			</tr>
+			<tr>
+				<td>41</td>
+				<td>42</td>
+				<td>43</td>
+				
+			</tr>
+			
+		</table>
+	</body>
+</html>

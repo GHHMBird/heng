@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F5F8"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divide_40_dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_shiming"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/view10"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/divide_15_dp"
+            android:text="原密码"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_oldkey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100dp"
+            android:background="@null"
+            android:digits="1234567890"
+            android:hint="请输入原交易密码"
+            android:inputType="textPassword"
+            android:maxLength="6"
+            android:textColor="#666"
+            android:textColorHint="#bbb"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/pswshow"
+            android:layout_width="@dimen/divide_30_dp"
+            android:layout_height="@dimen/divide_30_dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/divide_15_dp"
+            android:src="@drawable/mimayan" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e5e5e5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/divide_15_dp"
+            android:text="新密码"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_newkey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100dp"
+            android:background="@null"
+            android:digits="1234567890"
+            android:hint="设置新六位交易密码"
+            android:maxLength="6"
+            android:inputType="textPassword"
+            android:textColor="#666"
+            android:textColorHint="#bbb"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/shownew"
+            android:layout_width="@dimen/divide_30_dp"
+            android:layout_height="@dimen/divide_30_dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/divide_15_dp"
+            android:src="@drawable/mimayan" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_revise"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/divide20_dp"
+        android:layout_marginRight="@dimen/divide20_dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bg_submit_gray"
+        android:enabled="false"
+        android:text="确认修改"
+        android:textColor="#fff"
+        android:textSize="16sp"
+
+
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/divide_20_dp">
+
+        <TextView
+            android:id="@+id/tv_forget_jiaoyimima"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:text="忘记原交易密码？"
+            android:textColor="#5EA2FF"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

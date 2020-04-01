@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/user_weight"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/v_ruler"
+                android:layout_width="80dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="62dp"
+                    android:layout_marginLeft="30dp"
+                    android:background="@null"
+                    android:contentDescription="@null"
+                    android:src="@mipmap/kedu" />
+
+                <ScrollView
+                    android:id="@+id/vruler"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_marginTop="9dp"
+                        android:id="@+id/vruler_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+                </ScrollView>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/fragment_shouyiyugu_view"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_999999"
+                android:textSize="12sp"
+                android:text="我要投资(元)" />
+
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/user_height_value"
+                android:textSize="20dp"
+                android:textColor="@color/text_Fc291d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_999999"
+                android:textSize="12sp"
+                android:text="预估收益(元)" />
+
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/user_height_earns"
+                android:textColor="@color/text_Fc291d"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0" />
+
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:orientation="vertical"-->
+        <!--android:gravity="bottom|center_horizontal">-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:gravity="center"-->
+        <!--android:text="我要投资(元)"-->
+        <!--android:textColor="@color/color_999999"-->
+        <!--android:textSize="12sp"/>-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/user_height_value"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="20dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:textColor="@color/text_Fc291d"-->
+        <!--android:textSize="20sp"/>-->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1">-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:text="预估收益(元)"-->
+        <!--android:textColor="@color/color_999999"-->
+        <!--android:textSize="12sp"/>-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/user_height_earns"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:textColor="@color/text_Fc291d"-->
+        <!--android:textSize="20sp"/>-->
+
+        <!--</LinearLayout>-->
+        <!--</LinearLayout>-->
+    </LinearLayout>
+</LinearLayout>

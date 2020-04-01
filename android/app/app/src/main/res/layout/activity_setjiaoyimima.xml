@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#F4F5F8"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="为保障您的资金安全请不要将密码设置过于简单"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#e5e5e5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/divide_15_dp"
+            android:text="新密码"
+            android:textColor="#333333"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/et_newkey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100dp"
+            android:background="@null"
+            android:maxLength="6"
+            android:digits="0123456789"
+            android:hint="设置新六位交易密码"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColor="#666"
+            android:textColorHint="#ccc"/>
+
+        <ImageView
+            android:id="@+id/activity_setjiaoyimima_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/divide_15_dp"
+            android:src="@drawable/mimayan"/>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_sure"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/divide20_dp"
+        android:layout_marginRight="@dimen/divide20_dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bg_submit_gray"
+        android:enabled="false"
+        android:text="确认设置"
+        android:textColor="#fff"
+        android:textSize="16sp"
+
+
+        />
+
+
+</LinearLayout>

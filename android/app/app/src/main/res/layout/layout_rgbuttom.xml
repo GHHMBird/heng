@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_xieyi"
+    android:layout_width="match_parent"
+    android:layout_height="30sp"
+    android:layout_marginLeft="@dimen/divide_10_dp"
+    android:layout_marginTop="@dimen/divide_16_dp"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/divide_10_dp">
+
+    <CheckBox
+        android:id="@+id/cb_agreed"
+        android:layout_width="15dp"
+        android:checked="true"
+        android:layout_height="15dp"
+        android:background="@drawable/check_box_selector"
+        android:button="@null"
+        android:padding="5dp"
+        android:textSize="@dimen/divide_12_dp" />
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="我已阅读并同意"
+        android:textColor="@color/color_333333" />
+
+ <TextView
+        android:id="@+id/tv_xieyi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="《恒利来用户注册协议》"
+        android:textColor="@color/color_5aa0ff" />
+
+
+</LinearLayout>

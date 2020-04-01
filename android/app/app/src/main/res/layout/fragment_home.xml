@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <finan.heng.com.apps.utils.MyScrollView
+        android:id="@+id/myScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                app:image_scale_type="fit_xy"
+                app:is_auto_play="true" />
+
+            <LinearLayout
+                android:id="@+id/fragment_home_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#FAFAFA"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/tongzhi"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/laba" />
+
+                <finan.heng.com.apps.utils.ScollTextView
+                    android:id="@+id/fragment_home_scolltextview"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/tongzhi"
+                    android:layout_weight="1"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/fragment_home_right_arrow"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@mipmap/right"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e5e5e5"></LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/fragment_home_jianjie"
+                    android:layout_width="0dip"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/iv_companies_star"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:src="@mipmap/companies_star" />
+
+                        <TextView
+                            android:id="@+id/tv_companies_jianjie"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@id/iv_companies_star"
+                            android:text="公司简介"
+                            android:textColor="#333333"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_companies_jianjie"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toRightOf="@+id/iv_companies_star"
+                            android:text="专注优质长量资产"
+                            android:textSize="12sp" />
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fragment_home_safe"
+                    android:layout_width="0dip"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent">
+
+                        <ImageView
+                            android:id="@+id/iv_shield"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:src="@mipmap/shield" />
+
+                        <TextView
+                            android:id="@+id/tv_shield"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@id/iv_shield"
+                            android:text="安全保障"
+                            android:textColor="#333333"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_shield"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toRightOf="@+id/iv_shield"
+                            android:text="六重保障更放心"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#e5e5e5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/home_fragment_pro"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/lable" />
+
+                    <finan.heng.com.apps.utils.HHMView
+                        android:id="@+id/tv_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        app:HHMView_text="某某某公司" />
+
+                    <finan.heng.com.apps.utils.HHMTextView
+                        android:id="@+id/tv_hhm_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_title"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp"
+                        app:HHMTextView_hhm_text="0000"
+                        app:HHMTextView_hhm_textColor="@color/red"
+                        app:HHMTextView_hhm_textSize="@dimen/sp_14" />
+
+                    <TextView
+                        android:id="@+id/tv_percent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_hhm_textview"
+                        android:layout_centerHorizontal="true"
+                        android:text="0.00"
+                        android:textColor="#fc291d"
+                        android:textSize="60sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_hhm_textview"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="26dp"
+                        android:layout_toRightOf="@+id/tv_percent"
+                        android:text="%"
+                        android:textColor="#fc291d"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/tv_title12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_percent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="来呀快活呀"
+                        android:textColor="#999999"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv__number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_title12"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="我养你呀"
+                        android:textColor="#999999"
+                        android:textSize="12sp" />
+
+                    <finan.heng.com.apps.utils.HHMButton
+                        android:id="@+id/bt_touzi"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/tv__number"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="@dimen/divide20_dp"
+                        android:layout_marginRight="@dimen/divide20_dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/bg_submit_red"
+                        app:HHMButton_hhm_text="立即投资"
+                        app:HHMButton_hhm_textColor="@color/white"
+                        app:HHMButton_hhm_textSize="16sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </finan.heng.com.apps.utils.MyScrollView>
+
+</LinearLayout>

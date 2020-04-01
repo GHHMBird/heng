@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>welcome</title>
+<script>
+	window.onload = function(){
+		var time = 49;
+		var span = document.getElementById("span");
+		var timer = setInterval(function(){
+			span.innerHTML = time;
+			time--;
+			if(time<0){
+				clearInterval(timer);
+				location.href = "http://www.baidu.com";
+			}
+		},1000);
+	}
+	function clicks(obj){
+		obj.src="/web_14_response/checkImage?time="+new Date().getTime();
+	}
+</script>
+</head>
+<body>
+	恭喜您，登陆成功,<span id="span" style="color:red">50</span>s后跳转，如不跳转，<a href="http://www.baidu.com">点击这里</a>
+	<img onclick="clicks(this)" src="/web_14_response/checkImage">
+</body>
+</html>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/activity_yijianfankui_et1"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:gravity="start"
+                android:hint="请输入您对我们平台的宝贵意见..."
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="15dp"
+                android:textColor="@color/color_333333"
+                android:textColorHint="@color/color_bbbbbb"
+                android:textSize="16sp" />
+
+            <!--<EditText-->
+                <!--android:id="@+id/activity_yijianfankui_et2"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:background="@color/white"-->
+                <!--android:hint="请留下你的QQ或邮箱"-->
+                <!--android:paddingBottom="10dp"-->
+                <!--android:paddingLeft="15dp"-->
+                <!--android:paddingTop="10dp"-->
+                <!--android:textColor="@color/color_333333"-->
+                <!--android:textColorHint="@color/color_bbbbbb"-->
+                <!--android:textSize="16sp" />-->
+
+            <Button
+                android:id="@+id/activity_yijianfankui_btn"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/bg_submit_gray"
+                android:enabled="false"
+                android:text="确认提交"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
